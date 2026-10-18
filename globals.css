@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background: #fafafa; color: #171717; }
+.container-shell { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
+.product-card { min-width: 0; }
+::selection { background: #dbeafe; }
+@media (max-width: 640px) { .container-shell { width: min(100% - 28px, 1160px); } }
