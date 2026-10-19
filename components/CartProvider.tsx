@@ -32,3 +32,4 @@ export function useCart() {
 }
 export function cartProducts(items: CartItem[]) {
   return items.map((item) => ({ ...item, product: products.find((p) => p.id === item.id) })).filter((item) => item.product);
+                                                           }
