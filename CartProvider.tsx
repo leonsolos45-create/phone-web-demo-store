@@ -1,7 +1,7 @@
  "use client";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { products } from "@/lib/products";
+import { products } from "@/products";
 
 type CartItem = { id: string; quantity: number };
 type CartContextValue = { items: CartItem[]; count: number; add: (id: string) => void; remove: (id: string) => void; setQuantity: (id: string, quantity: number) => void; clear: () => void };
